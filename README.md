@@ -94,13 +94,40 @@ The DOM (Document Object Model):
 
 26.) Definition: The DOM is a structured representation of an HTML document. It represents the page so that programs can change the document structure, style, and content. JavaScript can be used to manipulate the DOM, enabling developers to dynamically update the content and appearance of web pages.
 
-27.) 
+27.) Selecting DOM Elements:
+    Definition: Selecting DOM elements means targeting specific parts of the HTML document so that they can be manipulated with JavaScript.
+    Methods for Selecting Elements:
+    getElementById: Selects a single element by its unique id.
+    getElementsByClassName: Selects all elements that share the same class name.
+    getElementsByTagName: Selects all elements with a specific tag name.
+    querySelector: Selects the first element that matches a specified CSS selector.
+    querySelectorAll: Selects all elements that match a specified CSS selector.
 
+28.) Common Modifications:
+    Changing Content: Use the textContent or innerHTML properties to update the text or HTML inside an element.
+    Changing Styles: Use the style property to modify the CSS styles of an element (e.g., element.style.color = "blue";).
+    Adding/Removing Classes: Use classList.add, classList.remove, or classList.toggle to manipulate an element’s classes.
+    Changing Attributes: Use setAttribute and removeAttribute to modify or remove attributes like src, href, alt, etc.
+    Creating and Inserting Elements: Use createElement and appendChild to create new elements and add them to the DOM.
 
+Events:
 
+28.) What Are Events? Definition: An event is an action or occurrence that happens in the browser, such as a user clicking a button, typing in a text field, or scrolling a page. JavaScript can detect these events and respond to them, enabling interactive behavior on web pages.
+29.) Event Listeners Definition: Event listeners are functions that wait for a specific event to occur on a particular element. When the event happens, the event listener "listens" for it and triggers a callback function—a function designed to execute when the event occurs.
 
+30.) Attaching Event Listeners:
+addEventListener: The most common method for attaching an event listener to an element. It takes two arguments: the event type (e.g., "click", "mouseover", "keydown") and the callback function to execute when the event occurs.
 
+31.) Inline Event Handlers: These can be directly placed within HTML tags (e.g., <button onclick="doSomething()">). However, using addEventListener is preferred as it separates HTML and JavaScript, making code more modular and easier to maintain.
 
+32.) Common Event Types: 
+Mouse Events: Triggered by mouse actions. Examples: click, dblclick (double-click), mouseover, mouseout, mousedown, mouseup.
+Keyboard Events: Triggered by keyboard actions. Examples: keydown, keyup, keypress.
+Form Events: Triggered by form-related actions. Examples: submit, change, focus, blur.
+Document/Window Events: Triggered by actions related to the document or window. Examples: load, resize, scroll, DOMContentLoaded.
+
+33.) Event Object:
+Definition: When an event occurs, the browser passes an event object to the event handler function. This object contains information about the event, such as the type of event, the element that triggered it, and other details like mouse coordinates for mouse events or key codes for keyboard events. Using the Event Object: The event object can be accessed by adding a parameter to the callback function. This allows the developer to prevent default actions, stop the event from propagating (bubbling up to parent elements), and access event-specific properties.
 
 
 
