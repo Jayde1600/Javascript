@@ -129,6 +129,15 @@ Document/Window Events: Triggered by actions related to the document or window. 
 33.) Event Object:
 Definition: When an event occurs, the browser passes an event object to the event handler function. This object contains information about the event, such as the type of event, the element that triggered it, and other details like mouse coordinates for mouse events or key codes for keyboard events. Using the Event Object: The event object can be accessed by adding a parameter to the callback function. This allows the developer to prevent default actions, stop the event from propagating (bubbling up to parent elements), and access event-specific properties.
 
+N O D E  J A V A S C R I P T:
 
+34.) 
+HTTP Module:
+Purpose: The HTTP module is essential for creating web servers and handling HTTP requests and responses. It allows you to build the backbone of web applications and APIs.
+Features: Create and manage web servers, handle different types of requests, and serve responses.
+
+35.) FS (File System) Module:
+Purpose: The FS module allows you to interact with the file system, enabling you to read, write, delete, and manipulate files and directories within your Node.js applications.
+Features: Perform file operations, manage directories, and handle both synchronous and asynchronous file processing.
 
 
